@@ -1,0 +1,48 @@
+// needed?
+body {
+    margin: 0;
+    // height: 100%;
+}
+
+.container {
+    color: #FFC000;
+    font-family: -apple-system, Roboto, sans-serif, serif;
+    background-color: #0C6980;
+    height: 100vh;
+    width: 100%;
+    .header {
+        &-sections {
+            display: flex;
+            > div {
+                width: calc(100% / 3);
+            }
+
+            &__logo {
+                display: flex;
+                img {
+                    margin: auto;
+                }
+            }
+
+            .contact-details {
+                font-size: 14px;
+                font-weight: bold;
+                padding: 10px;
+                text-align: right;
+            }
+        }
+    }
+
+    .home {
+        &__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                border-radius: 50%;
+                max-height: 400px;
+                height: 40vh;
+            }
+        }
+    }
+}
